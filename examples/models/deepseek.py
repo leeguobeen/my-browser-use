@@ -24,7 +24,7 @@ async def run_search():
 			'4. Return the first comment'
 		),
 		llm=ChatOpenAI(
-			base_url='https://api.deepseek.com/v1',
+			base_url='https://api.deepseek.com',
 			model='deepseek-chat',
 			api_key=SecretStr(api_key),
 		),
