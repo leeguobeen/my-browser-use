@@ -17,7 +17,7 @@ if not api_key:
 
 async def run_search():
 	agent = Agent(
-task=('去淘宝搜索最便宜u盘的价格'),
+		task='登陆百度 搜索今天天津的天气',
 		# task=('go to amazon.com, search for laptop, sort by best rating, and give me the price of the first result'),
 		llm=ChatOpenAI(
 			base_url='https://api.deepseek.com',

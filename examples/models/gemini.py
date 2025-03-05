@@ -27,7 +27,8 @@ browser = Browser(
 
 async def run_search():
 	agent = Agent(
-		task='Go to amazon.com, search for laptop, sort by best rating, and give me the price of the first result',
+		task='登陆百度搜索今天天津的天气',
+		# task='Go to amazon.com, search for laptop, sort by best rating, and give me the price of the first result',
 		llm=llm,
 		max_actions_per_step=4,
 		browser=browser,
