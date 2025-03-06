@@ -17,12 +17,13 @@ if not api_key:
 
 async def run_search():
 	agent = Agent(
-		task=(
-			'1. Go to https://www.reddit.com/r/LocalLLaMA '
-			"2. Search for 'browser use' in the search bar"
-			'3. Click on first result'
-			'4. Return the first comment'
-		),
+		# task=(
+		# 	'1. Go to https://www.reddit.com/r/LocalLLaMA '
+		# 	"2. Search for 'browser use' in the search bar"
+		# 	'3. Click on first result'
+		# 	'4. Return the first comment'
+		# ),
+		task=('去百度搜索 今天的上证指数'),
 		llm=ChatOpenAI(
 			base_url='https://api.deepseek.com',
 			model='deepseek-chat',
